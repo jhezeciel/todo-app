@@ -1,0 +1,148 @@
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+    background-image: url('./pics/bg.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.todo-due-date {
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+  }
+
+  
+h1 {
+    font-size: 100px; 
+    color: #380226; 
+    font-family: Script;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px; 
+    color: #b2aeb1; 
+    margin-bottom: 20px;
+
+}
+
+.todo-input {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-input input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.todo-input input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px; 
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ef0093;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-input button:hover {
+    background-color: #218838;
+}
+
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    width: 400%; 
+    max-width: 600px; 
+}
+
+.todo-item {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(3, 219, 75, 0.1);
+    word-wrap: break-word; 
+}
+
+.todo-item.complete span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center; 
+    flex-grow: 1;
+}
+
+.todo-content input[type="checkbox"] {
+    margin-right: 10px;
+    transform: translateY(0); 
+}
+
+.todo-content textarea {
+    width: 100%;
+    min-height: 60px; 
+    padding: 8px;
+    font-size: 14px;
+    resize: none; 
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.actions button {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ef0093;
+    color: white;
+    white-space: nowrap; 
+}
+
+.actions button:hover {
+    background-color: #ef0093;
+}
+
+.actions button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
